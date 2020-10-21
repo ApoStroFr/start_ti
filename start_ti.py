@@ -11,9 +11,11 @@ nmap=True
 compteur = 0
 for i in sys.argv:
 	compteur+=1
-	print(i)
+	print(i) 
 	if i == "-p" or i == "--project":
 		path = sys.argv[compteur]
+	if e == "-i" or i =="--internal:
+		print('intialize internal pentest, look for metasploit python')
 	if 	i == "-u" or i == "--url":
 		url = sys.argv[compteur]
 	if i == "-P" or i == "--Protocol":
